@@ -7,77 +7,6 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <EditText
-            android:layout_width="126dp"
-            android:layout_height="42dp"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editTextNumber1"
-            android:hint="@string/enter_number"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            android:layout_marginTop="48dp"
-            app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-            android:text="@string/add"
-            android:layout_width="117dp"
-            android:layout_height="48dp"
-            android:id="@+id/add"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
-            android:layout_marginTop="52dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/subtract" />
-
-    <Button
-            android:text="@string/multiply"
-            android:layout_width="117dp"
-            android:layout_height="48dp"
-            android:id="@+id/multiply"
-            app:layout_constraintTop_toBottomOf="@+id/add"
-            android:layout_marginTop="28dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/divide" />
-
-    <Button
-            android:text="@string/divide"
-            android:layout_width="117dp"
-            android:layout_height="48dp"
-            android:id="@+id/divide"
-            app:layout_constraintTop_toBottomOf="@+id/subtract"
-            android:layout_marginTop="28dp"
-            app:layout_constraintStart_toEndOf="@+id/multiply"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-            android:text="@string/subtract"
-            android:layout_width="117dp"
-            android:layout_height="48dp"
-            android:id="@+id/subtract"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumber1"
-            android:layout_marginTop="52dp"
-            app:layout_constraintStart_toEndOf="@+id/add"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-            android:layout_width="126dp"
-            android:layout_height="42dp"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editTextNumber2"
-            android:hint="@string/enter_number"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            android:layout_marginTop="48dp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextNumber1"
-            android:layout_marginEnd="164dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" />
-
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,6 +24,72 @@
             android:id="@+id/guideline"
             app:layout_constraintGuide_begin="20dp"
             android:orientation="horizontal" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="273dp"
+            android:layout_height="53dp"
+            android:id="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.335"
+            app:layout_constraintHorizontal_bias="0.5">
+
+        <EditText
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextNumber2"
+                android:hint="@string/enter_number" />
+
+        <EditText
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextNumber1"
+                android:hint="@string/enter_number" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="123dp"
+            android:layout_height="210dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.479"
+            android:id="@+id/linearLayout2">
+
+        <Button
+                android:text="@string/add"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:id="@+id/add" />
+
+        <Button
+                android:text="@string/subtract"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:id="@+id/subtract" />
+
+        <Button
+                android:text="@string/multiply"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:id="@+id/multiply" />
+
+        <Button
+                android:text="@string/divide"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:id="@+id/divide" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
