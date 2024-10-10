@@ -46,38 +46,10 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.346"
-            android:id="@+id/linearLayout1">
-
-        <Button
-                android:text="@string/add"
-                android:layout_width="117dp"
-                android:layout_height="48dp"
-                android:layout_margin="10dp"
-                android:id="@+id/btnAdd" />
-
-        <Button
-                android:text="@string/subtract"
-                android:layout_width="117dp"
-                android:layout_height="48dp"
-                android:layout_margin="10dp"
-                android:id="@+id/btnSubtract" />
-
-    </LinearLayout>
-
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/linearLayout3"
-            app:layout_constraintVertical_bias="0.09"
+            app:layout_constraintVertical_bias="0.047"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
         <Button
@@ -93,6 +65,34 @@
                 android:layout_height="48dp"
                 android:layout_margin="10dp"
                 android:id="@+id/btnDivide" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.33"
+            android:id="@+id/linearLayout1">
+
+        <Button
+                android:text="@string/add"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btnAdd" />
+
+        <Button
+                android:text="@string/subtract"
+                android:layout_width="117dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btnSubtract" />
 
     </LinearLayout>
 
@@ -134,19 +134,10 @@
             android:textSize="24sp"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.312"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-            android:text="@string/save_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnSave"
+            app:layout_constraintVertical_bias="0.153"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvResult"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:textAlignment="center" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

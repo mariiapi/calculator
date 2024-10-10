@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnSubtract: Button
     private lateinit var btnMultiply: Button
     private lateinit var btnDivide:   Button
+    private lateinit var btnSave:     Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,10 +44,52 @@ class MainActivity : AppCompatActivity() {
         btnMultiply = findViewById(R.id.btnMultiply)
         btnDivide = findViewById(R.id.btnDivide)
 
+//        tags is used for filtering specific logs
 //        Log.d("TEST", "onCreate: Activity has been created")
 //        Log.e("TEST", "onCreate: Activity has been created")
 //        Log.w("TEST", "onCreate: Activity has been created")
 //        Log.i("TEST", "onCreate: Activity has been created")
+
+
+        btnAdd.setOnClickListener {
+
+            val left = etLeft.text.toString().toInt()
+            val right = etRight.text.toString().toInt()
+            val result = "$left + $right = ${left + right}"
+
+            tvResult.text = result
+
+        }
+
+        btnSubtract.setOnClickListener {
+
+            val left = etLeft.text.toString().toInt()
+            val right = etRight.text.toString().toInt()
+            val result = "$left - $right = ${left - right}"
+
+            tvResult.text = result
+
+        }
+
+        btnMultiply.setOnClickListener {
+
+            val left = etLeft.text.toString().toInt()
+            val right = etRight.text.toString().toInt()
+            val result = "$left * $right = ${left * right}"
+
+            tvResult.text = result
+
+        }
+
+        btnDivide.setOnClickListener {
+
+            val left = etLeft.text.toString().toInt()
+            val right = etRight.text.toString().toInt()
+            val result = "$left / $right = ${left / right.toFloat()}"
+
+            tvResult.text = result
+
+        }
 
     }
 }
