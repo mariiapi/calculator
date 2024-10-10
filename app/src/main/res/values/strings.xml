@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">calculator</string>
-    <string name="enter_first_number">enter first number</string>
     <string name="enter_number">enter number</string>
     <string name="welcome_to_calculator">Welcome to calculator</string>
     <string name="add">add</string>
-    <string name="substract">substract</string>
     <string name="multiply">multiply</string>
     <string name="subtract">subtract</string>
     <string name="divide">divide</string>
+    <string name="result">Result</string>
+    <string name="save_result">Save result</string>
 </resources>
